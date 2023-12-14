@@ -1,9 +1,9 @@
 <h3>Listado de Héroes</h3>
-<div *ngIf="deletedHero; else nothingWasDeleted" >
+<ng-container *ngIf="deletedHero; else nothingWasDeleted" >
   <h3>Héroe Borrado:
     <small class="text-danger"> {{ deletedHero }} </small>
   </h3>
-</div>
+</ng-container>
 
 <ng-template #nothingWasDeleted>
   <h3>No ha borrado nada</h3>
